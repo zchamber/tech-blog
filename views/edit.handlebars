@@ -1,0 +1,22 @@
+  <form class="edit-post-form d-flex justify-content-center">
+    <div class="card text-center w-75 p-3 bg-dark text-white" id="postID" data-post_id="{{id}}">
+        <div class="card-header p-3 border border-primary border-start-2 rounded">
+            <strong> Editing: {{post_title}}</strong>
+        </div>
+        <div class="card-body">
+            <textarea class="form-control border-primary" id="post_title">{{post_title}}</textarea>
+            <textarea class="form-control border-primary" id="post_contents">{{post_contents}}</textarea>
+            <br/>
+            <h6 class="card-title text-white">Author: {{user.username}}</h6>
+        </div>
+        <button type="submit" value="submit" id="newPostSbtn" class="btn btn-primary">Update</button>
+        <button type="button" value="submit" id="delPostbtn" class="btn btn-danger">Delete</button>
+        <div class="card-footer text-white">
+            2 days ago
+        </div>
+    </div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/js/edit-post.js"></script>
+<script src="/js/del.js"></script>
