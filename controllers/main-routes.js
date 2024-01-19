@@ -131,7 +131,7 @@ router.get('/edit/:id', async (req, res) => {
 router.get('/dashboard/newPosts', withAuth, (req, res) => {
   try {
     // Render the new post page with an indicator for a new post
-    res.render('newPost', {
+    res.render('newpost', {
       existingPost: false,
     });
   } catch (err) {
